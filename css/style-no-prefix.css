@@ -1,0 +1,1055 @@
+@font-face {
+  font-family: 'DIN Pro';
+  src: url("../fonts/DINPro-Medium.woff2") format("woff2"), url("../fonts/DINPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url("DINPro.woff2") format("woff2"), url("DINPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url("../fonts/DINPro-Bold.woff2") format("woff2"), url("../fonts/DINPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+a:focus,
+a:active {
+  text-decoration: none !important;
+  color: initial !important; }
+
+a:hover {
+  text-decoration: none !important; }
+
+input:focus {
+  outline: 0 !important; }
+
+.loginBg {
+  background: url(../img/login-bg.jpg) no-repeat;
+  background-position-x: -300px;
+  background-position-y: -200px; }
+  @media (min-width: 1400px) {
+    .loginBg {
+      background-position-x: initial;
+      background-position-y: initial; } }
+
+.loginWrapper {
+  background: #fff;
+  width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative; }
+
+.loginLogoArea {
+  width: 320px;
+  height: 155px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 7px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none; }
+  @media (min-width: 1680px) {
+    .loginLogoArea {
+      height: 255px; } }
+  .loginLogoArea img {
+    margin-bottom: 50px; }
+
+.loginAreaWrapper {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; }
+  .loginAreaWrapper h1 {
+    font-family: "DIN Pro";
+    font-weight: bold;
+    color: #58595b;
+    text-align: center;
+    font-size: 33px;
+    margin: 30px 0; }
+    @media (min-width: 1680px) {
+      .loginAreaWrapper h1 {
+        margin: 50px 0; } }
+
+.loginArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .loginArea input:focus {
+    outline: 0; }
+
+.loginUsername {
+  position: relative; }
+  .loginUsername input {
+    background: #e2e2e2;
+    border: 0;
+    border-radius: 5px;
+    color: #58595b;
+    font-family: "DIN Pro";
+    font-size: 16px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 100%;
+    padding-left: 45px; }
+  .loginUsername img {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 23px; }
+
+.loginPw {
+  position: relative; }
+  .loginPw input {
+    background: #e2e2e2;
+    border: 0;
+    border-radius: 5px;
+    color: #58595b;
+    font-family: "DIN Pro";
+    font-size: 16px;
+    margin-bottom: 20px;
+    height: 40px;
+    padding-left: 45px;
+    width: 100%; }
+  .loginPw img {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 22px; }
+
+.loginBtn {
+  width: 100px;
+  height: 40px;
+  background: #f7941d;
+  font-family: "DIN Pro";
+  color: #fff;
+  font-size: 14px;
+  border: 0;
+  border-radius: 20px;
+  float: right;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in; }
+  .loginBtn:hover {
+    background: #e47c00; }
+
+.brand-checkbox-label {
+  float: left; }
+
+.brand-checkbox-input {
+  display: none; }
+
+.brand-checkbox-icon {
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background: #e2e2e2;
+  margin-top: 3px;
+  cursor: pointer;
+  float: left; }
+
+.brand-checkbox-icon::after {
+  display: block;
+  position: absolute;
+  content: '\2713';
+  left: 0px;
+  top: -1px;
+  font-size: 13px;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: all ease-in .2s;
+  transition: all ease-in .2s; }
+
+.brand-checkbox-input:checked ~ .brand-checkbox-icon::after {
+  width: 16px; }
+
+.remember_forgot .brand-checkbox i:after {
+  left: 2px; }
+
+.brand-checkbox {
+  font-family: "DIN Pro";
+  color: #58595b;
+  float: left;
+  margin-top: 10px; }
+  .brand-checkbox label {
+    width: initial !important;
+    float: left;
+    padding-left: 10px;
+    cursor: pointer; }
+
+.loginFooter {
+  color: #58595b;
+  width: 100%;
+  height: 55px;
+  border-top: 1px #cdcdcd solid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .loginFooter p {
+    margin: 0;
+    color: #58595b;
+    font-family: "DIN Pro";
+    width: 320px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px; }
+
+.myFilesWrapper {
+  widtH: 100%;
+  float: left; }
+
+.sidebar {
+  width: 80px;
+  float: left;
+  height: 100vh;
+  background: #555658;
+  position: relative; }
+  .sidebar:before {
+    content: "";
+    height: 10px;
+    background: #f7941d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+
+.sideBarLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0; }
+
+.contentArea {
+  width: 100%;
+  float: left;
+  background: #2f2f31; }
+
+.topBar {
+  width: 100%;
+  height: 60px;
+  background: #3b3c3e;
+  float: left; }
+
+.topBarLogo {
+  float: left;
+  margin: 1.3em 0; }
+
+.hi {
+  color: #fff;
+  font-size: 18px;
+  font-family: "DIN Pro";
+  float: left;
+  margin-left: 25px;
+  margin-top: 18px; }
+
+.topSearch {
+  float: left;
+  width: 320px;
+  position: relative;
+  margin: 10px 20px; }
+  .topSearch input {
+    height: 40px;
+    width: 100%;
+    background: #2f2f31;
+    color: #757575;
+    font-family: "DIN Pro";
+    border: 0;
+    padding: 0 10px; }
+  .topSearch button {
+    height: 40px;
+    width: 40px;
+    border: 0;
+    font-family: "DIN Pro";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #2f2f31;
+    background-image: url(../img/search-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in; }
+    .topSearch button:hover {
+      background-color: #fff; }
+
+.signOut {
+  color: #fff;
+  font-size: 16px;
+  font-family: "DIN Pro";
+  text-decoration: none;
+  margin: 1.1em 0;
+  float: right; }
+  .signOut img {
+    width: 23px;
+    margin-left: 8px;
+    float: right;
+    margin-top: -2px;
+    cursor: pointer; }
+
+.galleryArea {
+  width: calc(100% - 100px);
+  float: left;
+  background: #fff;
+  margin: 10px;
+  height: 100%; }
+
+#choochGallery .galleryImg {
+  border: 1px solid #d8d8d8; }
+
+.galleryOverlay {
+  opacity: 0;
+  transition: all 0.2s ease-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 8px;
+  z-index: 9; }
+  .galleryOverlay:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.toggleIcon {
+  width: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+.galleryTaggedImgWrapper {
+  float: left;
+  position: relative;
+  overflow: hidden; }
+
+.galleryTaggedImg {
+  width: 100%;
+  float: left; }
+
+.tagsWrapper {
+  float: left;
+  position: relative;
+  z-index: 1;
+  transform: translateX(0px);
+  transition: 0.3s ease-in all; }
+
+.invisibleBtn {
+  opacity: 0; }
+
+.tags {
+  padding: 10px;
+  margin: 0;
+  margin-left: 0;
+  float: left;
+  width: 200px;
+  height: auto !important;
+  background: #fff; }
+  .tags li {
+    list-style-type: none; }
+    .tags li a {
+      color: #555658;
+      background: #e3e3e3;
+      padding: 2px 5px 3px 5px;
+      float: left;
+      font-size: 14px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      text-decoration: none;
+      font-family: "DIN Pro"; }
+
+.tagsWrapper .nav-tabs {
+  background: #fff;
+  width: 100%;
+  padding-left: 5px; }
+  .tagsWrapper .nav-tabs li {
+    margin-bottom: 0;
+    height: 34px; }
+    .tagsWrapper .nav-tabs li a {
+      border-radius: 0;
+      font-family: "DIN Pro";
+      color: #555658;
+      font-size: 14px;
+      background: #fff;
+      padding: 5px 8px !important;
+      margin-right: 10px;
+      position: relative;
+      overflow: hidden;
+      height: 100%; }
+      .tagsWrapper .nav-tabs li a:after {
+        content: "";
+        background: #f7941d;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateX(-100%);
+        transition: all 0.2s ease-in; }
+
+.tagsWrapper .nav-tabs .nav-item.active a {
+  border: 0;
+  box-shadow: 0; }
+
+.tagsWrapper .nav-tabs .nav-item.active a:after {
+  transform: translateX(0%); }
+
+.landscape {
+  max-width: 600px; }
+  @media (min-width: 1400px) {
+    .landscape {
+      max-width: 800px; } }
+
+.portrait {
+  max-width: 350px; }
+  @media (min-width: 1400px) {
+    .portrait {
+      max-width: 500px; } }
+
+.galleryTags {
+  width: 100%;
+  float: left; }
+
+.modalImg {
+  float: left;
+  border: 6px solid #e3e3e3; }
+
+@media (min-width: 992px) {
+  .modal-lg-portrait {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+
+@media (min-width: 992px) {
+  .modal-lg-landscape {
+    width: 80vw !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+
+.modal-lg-landscape .modal-content {
+  max-height: 600px !important; }
+
+.modal-content {
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  margin-top: 40px; }
+
+.closeModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.3);
+  border: 0; }
+
+.sideBarNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0; }
+  .sideBarNav li {
+    list-style-type: none;
+    background: #555658;
+    height: 80px;
+    border-bottom: 1px solid #2f2f31;
+    font-family: "DIN Pro";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+    .sideBarNav li:last-of-type {
+      border: 0; }
+    .sideBarNav li:hover a {
+      color: #f7941d; }
+    .sideBarNav li span {
+      margin-top: 5px; }
+    .sideBarNav li img {
+      width: 25px; }
+    .sideBarNav li a {
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: #555658;
+      flex-direction: column;
+      transition: all 0.2s ease-in;
+      font-size: 14px; }
+
+.sidebar_active {
+  background: #3b3c3e;
+  color: #f7941d !important; }
+
+.modalImgWrapper {
+  position: relative;
+  z-index: 9;
+  float: left; }
+
+.hideTags {
+  height: 35px;
+  width: 20px;
+  background: #f7941d;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hideTags img {
+    width: 7px; }
+
+.hideTags-hide {
+  transform: translateX(-200px);
+  transition: 0.3s ease-in all; }
+
+.arrow-flip {
+  transform: rotate(180deg); }
+
+.publishWrapper {
+  width: calc(100% - 130px);
+  float: left;
+  padding-left: 30px; }
+
+.publishTitle {
+  width: 100%;
+  color: #fff;
+  font-family: "DIN Pro";
+  float: left;
+  clear: both;
+  border-bottom: 1px solid #555658;
+  font-size: 16px;
+  padding-bottom: 10px; }
+
+.folders {
+  padding: 0; }
+  .folders li {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 60px;
+    padding: 10px;
+    border-radius: 10px; }
+
+.eachFolder:hover > .selectAndOptions {
+  visibility: visible; }
+
+.folderName {
+  color: #fff;
+  font-family: "DIN Pro";
+  color: #fff;
+  font-size: 16px;
+  margin-top: 15px; }
+
+.selectAndOptions {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  visibility: hidden; }
+
+.selectAndOptions-visible {
+  visibility: visible; }
+
+.folderSelectbox {
+  color: #fff;
+  float: left;
+  margin: 0; }
+  .folderSelectbox .brand-checkbox-icon {
+    background: #565758;
+    border-radius: 3px;
+    margin: 0; }
+    .folderSelectbox .brand-checkbox-icon:after {
+      font-size: 12px; }
+
+.folderOptions {
+  float: right;
+  position: relative; }
+
+.folderOpTrigger {
+  background: #565758;
+  color: #2f2f31;
+  font-family: "DIN Pro";
+  letter-spacing: 2px;
+  height: 15px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 1px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+  .folderOpTrigger:hover {
+    color: initial;
+    text-decoration: none; }
+  .folderOpTrigger i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 9px; }
+
+.folderDropdown {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  min-width: 100px !important;
+  width: 100px !important;
+  background: #737476 !important;
+  padding: 0 !important;
+  border-radius: 0 !important; }
+  .folderDropdown a {
+    width: 100%;
+    background: #737476;
+    color: #ffF;
+    font-family: "DIN Pro";
+    transition: all 0.2s ease-in;
+    float: left;
+    font-size: 14px !important;
+    padding: 3px 6px !important; }
+    .folderDropdown a:hover {
+      text-decoration: none;
+      color: #fff;
+      background: #5f6061; }
+
+.publishGalleryWrapper {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #555658;
+  margin-top: 50px;
+  max-height: 200px; }
+
+.publishGallery {
+  overflow: visible !important;
+  margin-left: -20px; }
+  .publishGallery > div {
+    overflow: visible !important; }
+
+.publishGalleryImg {
+  max-height: 200px;
+  border: 2px solid transparent !important; }
+
+.eachPublishGalleryItem {
+  padding-top: 33px !important; }
+  .eachPublishGalleryItem:hover > .selectAndOptions {
+    visibility: visible; }
+
+.publishGallerySelect {
+  margin-top: -40px;
+  margin-bottom: 0; }
+
+.publishImgTitle {
+  font-family: "DIN Pro";
+  position: absolute;
+  bottom: -10px;
+  color: #fff;
+  width: 100%;
+  text-align: center; }
+
+.publishUploadWrapper {
+  float: left;
+  width: 100%;
+  max-width: 220px;
+  margin-top: 55px; }
+
+.publishUploadBtn {
+  background: #f7941d;
+  color: #fff;
+  font-family: "DIN Pro";
+  font-size: 16px;
+  height: 30px;
+  text-align: center;
+  float: left;
+  width: 100%;
+  border: 0; }
+
+.createNewfolder {
+  float: left;
+  width: 100%;
+  font-family: "DIN Pro";
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: all 0.2s ease-in; }
+  .createNewfolder:hover {
+    opacity: 0.5;
+    color: #fff; }
+  .createNewfolder img {
+    width: 20px;
+    float: left;
+    margin-right: 8px; }
+
+.eachFolder-selected {
+  background: #272727; }
+
+.publishGallery .eachFolder-selected img {
+  border-color: #fff !important; }
+
+.loginAccountActions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 60px; }
+
+.login_signIn {
+  font-family: "DIN Pro";
+  font-size: 14px;
+  color: gray; }
+  .login_signIn a {
+    text-decoration: none;
+    color: #4868c5; }
+
+.settingsContainer {
+  float: left;
+  width: 315px;
+  margin-left: 55px;
+  margin-top: 30px; }
+
+.ftpWrapper {
+  background: #555658;
+  padding: 15px;
+  width: 100%;
+  float: left;
+  position: relative; }
+  .ftpWrapper ul {
+    padding-left: 0;
+    margin-left: 20px;
+    margin-bottom: 0; }
+    .ftpWrapper ul li {
+      list-style-type: none;
+      font-family: "DIN Pro";
+      color: #c0c1c1;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 15px; }
+      .ftpWrapper ul li:last-of-type {
+        margin-bottom: 0; }
+      .ftpWrapper ul li p {
+        float: left;
+        width: 45%;
+        position: relative;
+        margin: 0; }
+        .ftpWrapper ul li p:after {
+          content: ":";
+          float: right;
+          color: #c0c1c1;
+          font-family: "DIN Pro";
+          position: absolute;
+          right: 26px;
+          top: -1px; }
+      .ftpWrapper ul li span {
+        color: #ffF;
+        float: left;
+        width: 55%; }
+
+.apiWrapper {
+  background: #555658;
+  padding: 15px;
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 30px; }
+  .apiWrapper ul {
+    padding-left: 0;
+    margin-left: 20px;
+    margin-bottom: 0; }
+    .apiWrapper ul li {
+      list-style-type: none;
+      font-family: "DIN Pro";
+      color: #c0c1c1;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 15px; }
+      .apiWrapper ul li:last-of-type {
+        margin-bottom: 0; }
+      .apiWrapper ul li p {
+        float: left;
+        margin: 0; }
+      .apiWrapper ul li span {
+        color: #ffF;
+        float: left; }
+
+.changePwWrapper {
+  background: #555658;
+  padding: 15px;
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 30px; }
+  .changePwWrapper form {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    font-family: "DIN Pro";
+    margin-bottom: 0; }
+    .changePwWrapper form div {
+      margin-bottom: 15px; }
+    .changePwWrapper form p {
+      color: #c0c1c1;
+      margin: 5px 0; }
+    .changePwWrapper form input[type="password"] {
+      width: 100%;
+      height: 30px;
+      background: #3b3c3e;
+      padding: 0 5px;
+      color: #fff;
+      border: 0;
+      font-family: "DIN Pro"; }
+    .changePwWrapper form input[type=submit] {
+      background: #f7941d;
+      float: right;
+      height: 30px;
+      padding: 0 10px;
+      font-family: "DIN Pro";
+      font-weight: bold;
+      color: #2f2f31;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      transition: all 0.2s ease-in; }
+      .changePwWrapper form input[type=submit]:hover {
+        background: #d8d5d2; }
+
+.settings_orangeSquare {
+  background: #f7941d;
+  width: 50px;
+  height: 50px;
+  font-family: "DIN Pro";
+  font-weight: bold;
+  color: #2f2f31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -25px;
+  top: 0; }
+  .settings_orangeSquare img {
+    width: 22px; }
+
+.perceptionsWrapper {
+  float: left;
+  width: 100%;
+  max-width: 831px;
+  margin-left: 55px;
+  margin-top: 30px;
+  color: #fff; }
+
+.eachPerception {
+  width: 200px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: 0.4s ease-in all; }
+  .eachPerception:nth-child(4n) {
+    margin-right: 0; }
+  .eachPerception .multi-collapse {
+    position: absolute !important;
+    left: 0;
+    transition: 0.4s ease-in all; }
+  .eachPerception .container {
+    height: 100%; }
+  .eachPerception .collapse {
+    display: block !important;
+    transition: 0.4s ease-in all;
+    height: 0;
+    margin-top: 10px; }
+  .eachPerception .collapse.in {
+    height: 400px !important;
+    transition: 0.4s ease-in all; }
+
+.eachPerception-opened {
+  height: 470px;
+  transition: 0.4s ease-in all; }
+
+.perceptionsCollapseWrapper {
+  float: left;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.perceptionCollapse {
+  position: absolute;
+  width: 100%;
+  background: #555658;
+  font-family: "DIN Pro";
+  color: #adadad;
+  max-height: 400px;
+  transition: 0.4s ease-in all; }
+
+.perceptionCollapse-disabled {
+  background: #3b3c3e;
+  transition: 0.4s ease-in all; }
+
+.perceptionBtnWrapper {
+  background: #555658;
+  border: 1px solid #555658;
+  height: 60px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative; }
+
+.perceptionBtn {
+  color: #fff;
+  font-family: "DIN Pro";
+  transition: 0.4s ease-in all;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 16px;
+  padding-left: 11px; }
+  .perceptionBtn:after {
+    content: "";
+    width: 101%;
+    height: 10px;
+    position: absolute;
+    left: -1px;
+    bottom: -11px;
+    background: #555658;
+    transition: all 0.2s ease-in; }
+  .perceptionBtn:focus, .perceptionBtn:active {
+    color: #fff !important; }
+  .perceptionBtn:hover {
+    color: #fff; }
+
+.perceptionBtn.collapsed:after {
+  transition: all 0.2s ease-in;
+  height: 0; }
+
+.perceptionBtn-disabled {
+  background: #3b3c3e;
+  transition: all 0.2s ease-in; }
+  .perceptionBtn-disabled .perceptionBtn {
+    color: #89898a;
+    transition: all 0.2s ease-in; }
+    .perceptionBtn-disabled .perceptionBtn:after {
+      background: #3b3c3e;
+      height: 11px;
+      bottom: -11px; }
+    .perceptionBtn-disabled .perceptionBtn:focus, .perceptionBtn-disabled .perceptionBtn:active {
+      color: #89898a !important; }
+    .perceptionBtn-disabled .perceptionBtn:hover {
+      color: #89898a; }
+
+.perceptionBtn-disabled .perceptionBtn.collapsed:after {
+  transition: all 0.2s ease-in;
+  height: 0; }
+
+.perceptionActiveToggle {
+  width: 10px;
+  height: 30px;
+  background: #3b3c3e;
+  float: right;
+  border-radius: 20px;
+  right: 11px;
+  z-index: 99;
+  position: absolute;
+  transition: all 0.2s ease-in; }
+  .perceptionActiveToggle:before {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 10px;
+    background: #f7941d;
+    border-radius: 20px;
+    transform: translateY(0px);
+    transition: all 0.2s ease-in; }
+
+.perceptionActiveToggle-disable {
+  transition: all 0.2s ease-in;
+  background: #2f2f31; }
+  .perceptionActiveToggle-disable:before {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 10px;
+    transform: translateY(14px);
+    background: #555658;
+    border-radius: 20px;
+    transition: all 0.2s ease-in; }
+
+.perceptions_eachClass {
+  border-bottom: 1px solid #707072; }
+  .perceptions_eachClass:nth-last-child(-n+4) {
+    border-bottom: 0; }
+  .perceptions_eachClass span {
+    padding: 3px 0;
+    float: left; }
+
+.customScroll {
+  opacity: 0; }
+  .customScroll .mCSB_dragger_bar {
+    background: #707072 !important;
+    width: 7px !important; }
+  .customScroll .mCSB_draggerRail {
+    background: #3b3c3e !important;
+    width: 7px !important; }
+
+.perceptionCollapse-disabled .mCSB_draggerRail {
+  background: #2f2f31 !important; }
+
+.customScroll.show {
+  opacity: 1; }
+
+.perceptionSearch {
+  float: left;
+  widtH: 100%;
+  margin-bottom: 10px; }
+  .perceptionSearch input {
+    background: transparent;
+    font-family: "DIN Pro";
+    color: #555658;
+    font-style: italic;
+    border: 0;
+    border-bottom: 1px solid #555658;
+    padding: 3px 7px;
+    width: 100%;
+    height: 30px;
+    font-size: 16px; }
+
+/*# sourceMappingURL=style-no-prefix.css.map */

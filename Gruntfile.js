@@ -1,49 +1,70 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+
+
 		sass: {
 			options: {
 				sourceMap: true
 			},
 			dist: {
 				files: {
-					'css/style.css': 'scss/style.scss'
+                    'css/style-no-prefix.css': 'scss/style.scss'
 				}
 			}
 		},
 		watch: {
 			sass: {
-				files : ['scss/*.scss'],
-				tasks : ['sass']
-			},
+                files: ['scss/*.scss'],
+				tasks: ['sass', 'postcss']
+			}
 
 		},
+
 
 		browserSync: {
 			dev: {
 				bsFiles: {
 					src: [
 						'css/*.css',
-						'*.html'
+                        '*.aspx',
+                        '*.Master'
 					]
 				},
 				options: {
 					watchTask: true,
-					server: {
-						baseDir: './'
-					}
+                    proxy: 'http://localhost:64599'
 				}
 			}
-		}
+		},
+		postcss: {
+			options: {
+		
+				processors: [
+					require('autoprefixer')({
+						browsers: ['last 2 versions', 'ie > 9', 'Firefox > 50', 'Safari > 4']
+					})
+				]
+			},
+			dist: {
+                src: 'css/style-no-prefix.css',
+                dest: 'css/style.css'
+			}
+		} //postcss
 	});
 
 	//register tasks
+    grunt.loadNpmTasks('grunt-sass');
 
-	grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-postcss');
+
+    grunt.loadNpmTasks('grunt-browser-sync');
+
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-browser-sync');
+
+
 
 	//default task
-	grunt.registerTask('default', ['sass', 'browserSync', 'watch']);
+	grunt.registerTask('default', ['sass', 'postcss', 'browserSync', 'watch']);
 };

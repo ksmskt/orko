@@ -1,0 +1,505 @@
+<html>
+
+<head>
+    <title>CHOOCH</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Chooch is an artificial intelligence based search and discovery platform which helps publishers monetize their content.">
+    <meta name="keywords" content="Chooch, Artificial Intelligence, Deep Learning, Visual Search,  Video Search, Labeling, Artificial Intelligence Training, Machine Learning, Content Monetization, AI Commerce, Video Commerce, Visual Commerce, Autonomous AI">
+    <meta name="author" content="Chooch Intelligence Technologies Co. ">
+    <meta name="google-site-verification" content="sn_6WL1bdw-CGtPKpSBxzFhsJH6ndKI5fP19fa05xas" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="css/style.css?dummy=2" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/justifiedGallery.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/lity.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="js/jquery.justifiedGallery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="myFilesWrapper">
+
+
+
+        <div class="topBar">
+            <div class="container-fluid">
+                <img class="topBarLogo" src="img/logo-orange.png">
+                <p class="hi">Hi&nbsp;
+                    <span class="hiUsername">Chooch</span>
+                </p>
+
+                <form class="topSearch" action="">
+                    <input id="topSearch" type="search" placeholder="Search" required>
+                    <button id="topSearchBtn" type="submit" placeholder=""> </button>
+                </form>
+                <a href="#!" class="signOut">Sign Out
+                    <img src="img/sign-out.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="contentArea">
+        <div class="sidebar">
+
+            <ul class="sideBarNav">
+                <li>
+                    <a class="sidebar_active" href="#!">
+                        <img src="img/myfiles-icon.png">
+                        <span>My Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <img src="img/perceptions-icon.png">
+                        <span>Perceptions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <img src="img/export-icon.png">
+                        <span>Export</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <img src="img/settings-icon.png">
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <img src="img/publish-icon.png">
+                        <span>Publish</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="galleryArea">
+            <div id="choochGallery">
+                <div class="eachGalleryItem">
+                    <a href="img/sample3.jpg" data-toggle="modal" data-target=".bd-example-modal-lg" data-backdrop="true">
+                        <img src="img/sample3.jpg" />
+                    </a>
+                    <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                        aria-hidden="true">
+                        <button class="closeModal" type="button" data-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-dialog modal-lg">
+
+                            <div class="modal-content">
+                                <button class="closeModal invisibleBtn" type="button" data-dismiss="modal" aria-label="Close"></button>
+                                <div class="modalImgWrapper">
+
+                                    <img class="modalImg" src="img/sample3.jpg" />
+                                </div>
+                                <div class="tagsWrapper">
+
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item active">
+                                            <a class="nav-link active" id="tags-tab" data-toggle="tab" href="#tags" role="tab" aria-controls="tags" aria-selected="true">Tags</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="metadata-tab" data-toggle="tab" href="#metadata" role="tab" aria-controls="metadata" aria-selected="false">Metadata</a>
+                                        </li>
+
+                                    </ul>
+                                    <a href="#!" class="hideTags">
+                                        <img src="img/left-arrow.png">
+                                    </a>
+                                    <div class="tab-content" id="tagsTab">
+                                        <div class="tab-pane fade active in" id="tags" role="tabpanel" aria-labelledby="tags-tab">
+                                            <ul class="tags">
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="metadata" role="tabpanel" aria-labelledby="metadata">
+                                            <ul class="tags">
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eachGalleryItem">
+                    <a href="img/sample2.jpg" data-toggle="modal" data-target=".bd-example-modal-lg-2" data-backdrop="true">
+                        <img src="img/sample2.jpg" />
+                    </a>
+                    <div id="myModal" class="modal fade bd-example-modal-lg-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                        aria-hidden="true">
+                        <button class="closeModal" type="button" data-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-dialog modal-lg">
+
+                            <div class="modal-content">
+                                <button class="closeModal invisibleBtn" type="button" data-dismiss="modal" aria-label="Close"></button>
+                                <div class="modalImgWrapper">
+
+                                    <img class="modalImg" src="img/sample2.jpg" />
+                                </div>
+                                <div class="tagsWrapper">
+
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item active">
+                                            <a class="nav-link active" id="tags-tab" data-toggle="tab" href="#tags" role="tab" aria-controls="tags" aria-selected="true">Tags</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="metadata-tab" data-toggle="tab" href="#metadata" role="tab" aria-controls="metadata" aria-selected="false">Metadata</a>
+                                        </li>
+
+                                    </ul>
+                                    <a href="#!" class="hideTags">
+                                        <img src="img/left-arrow.png">
+                                    </a>
+                                    <div class="tab-content" id="tagsTab">
+                                        <div class="tab-pane fade active in" id="tags" role="tabpanel" aria-labelledby="tags-tab">
+                                            <ul class="tags">
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="metadata" role="tabpanel" aria-labelledby="metadata">
+                                            <ul class="tags">
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eachGalleryItem">
+                    <a href="img/sample4.jpg" data-toggle="modal" data-target=".bd-example-modal-lg-3" data-backdrop="true">
+                        <img src="img/sample4.jpg" />
+                    </a>
+                    <div id="myModal" class="modal fade bd-example-modal-lg-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                        aria-hidden="true">
+                        <button class="closeModal" type="button" data-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-dialog modal-lg">
+
+                            <div class="modal-content">
+                                <button class="closeModal invisibleBtn" type="button" data-dismiss="modal" aria-label="Close"></button>
+                                <div class="modalImgWrapper">
+
+                                    <img class="modalImg" src="img/sample4.jpg" />
+                                </div>
+                                <div class="tagsWrapper">
+
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item active">
+                                            <a class="nav-link active" id="tags-tab" data-toggle="tab" href="#tags" role="tab" aria-controls="tags" aria-selected="true">Tags</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="metadata-tab" data-toggle="tab" href="#metadata" role="tab" aria-controls="metadata" aria-selected="false">Metadata</a>
+                                        </li>
+
+                                    </ul>
+                                    <a href="#!" class="hideTags">
+                                        <img src="img/left-arrow.png">
+                                    </a>
+                                    <div class="tab-content" id="tagsTab">
+                                        <div class="tab-pane fade active in" id="tags" role="tabpanel" aria-labelledby="tags-tab">
+                                            <ul class="tags">
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">pea jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">couple</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">street fashion</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="metadata" role="tabpanel" aria-labelledby="metadata">
+                                            <ul class="tags">
+                                                <li class="eachTag">
+                                                    <a href="#!">jacket</a>
+                                                </li>
+                                                <li class="eachTag">
+                                                    <a href="#!">fashion week</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <script>
+            $('#choochGallery').justifiedGallery({
+                rowHeight: 250,
+                lastRow: 'nojustify',
+                margins: 10
+            });
+
+            //$('.eachGalleryItem').each(function (i) {});
+            $(document).ready(function () {
+
+
+                $('.hideTags').click(function () {
+                    $(this).parent().toggleClass('hideTags-hide')
+                    $(this).toggleClass('arrow-flip')
+                });
+
+                // $('.hideImgBtn').click(function () {
+                //     $(this).parent().find('.modalImg').toggleClass('hideImgBtn-hide')
+                // });
+
+
+
+
+
+                var pics = document.querySelectorAll(".modalImg");
+                var pic;
+
+                for (i = 0; i < pics.length; i++) {
+                    pic = pics[i];
+                    if (pic.complete) {
+                        // The image is already loaded, call handler
+                        checkImage(pic);
+                    } else {
+                        // The image is not loaded yet, set load event handler
+                        pic.addEventListener("load", function () {
+                            checkImage(this);
+                        })
+                    }
+                }
+
+                function checkImage(img) {
+                    if (img.naturalHeight > img.naturalWidth) {
+                        img.classList.add("portrait")
+                    } else {
+                        img.classList.add("landscape")
+                    }
+                }
+
+
+                $('.modal').on('loaded.bs.modal', function (e) {
+
+
+                    if ($(this).find('.modalImg').hasClass('landscape')) {
+                        $(this).find('.modal-lg').addClass('modal-lg-landscape');
+                        $(this).find('.modal-lg').removeClass('modal-lg-portrait');
+
+                    } else {
+                        $(this).find('.modal-lg').removeClass('modal-lg-landscape');
+                        $(this).find('.modal-lg').addClass('modal-lg-portrait');
+                    }
+                });
+
+
+
+
+
+            });
+        </script>
+</body>
+
+</html>
